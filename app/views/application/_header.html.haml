@@ -1,8 +1,8 @@
 .header.row.top-header{style: "background:url('#{asset_path('hard-wood-bg.jpg')}') no-repeat center center;"}
-  .col-lg-12.hardwood-header
+  .col-lg-12.hardwood-header{style:"height: 100%;"}
     .row
-      .col-lg-2
-      .col-lg-4
+      .col-lg-1
+      .col-lg-6
         .social
           %ul.social-block
             %li.sm-button#facebook{"data-toggle":"tooltip", "data-placement":"bottom", "title":"Facebook"}
@@ -11,7 +11,7 @@
             %li.sm-button#twitter{"data-toggle":"tooltip", "data-placement":"bottom", "title":"Twitter"}
               %a{href:"https://twitter.com/FJTButcherBlock"}
                 %i.fab.fa-twitter
-      .col-lg-6
+      .col-lg-5
         .contact-info
           %ul
             %li
@@ -33,8 +33,54 @@
       .col-lg-4
         .titles
           %h2{style:"font-weight: bold;"} FOREVER JOINT TOPS
-          %h3{style:"font-weight: bold;"} Quality that is Forever Yours
+          %h4{style:"font-weight: bold;"} Quality that is Forever Yours
       .col-lg-2
+        .header-payments{style:"height: 100%;"}
+          %ul{style:"margin-top: 15%;"}
+            %li{style:"display:block; margin: 10px 0px 10px;"}
+              %a.btn.btn-primary.light-header-btn{href: "/shop", style:"height: 40px; width: 150px;"}
+                %span
+                  Get Pricing
+                  %span.fas.fa-check-circle
+            %li{style:"display:block; margin: 10px 0px 10px;"}
+              -# TODO (Jordan): Update reference
+              %a.btn.btn-primary.light-header-btn{href: "#", style:"height: 40px; width: 150px; display: inline-flex;"}
+                %span{style:"padding-bottom:12px; padding-right: 5px;"}
+                  Pay Invoice
+                %span.fab.fa-cc-paypal{style:"font-size: 25px;"}
       .col-lg-2
 .header.row.top-header{style: "background:url('#{asset_path('hard-wood-bg.jpg')}') no-repeat center center;"}
   .col-lg-12.hardwood-header
+    .header-menu{style: "height: 100%;"}
+      %ul.menu
+        %li.menu-item
+          %a{href:"/home"}
+            Home
+        %li.menu-item
+          %a{href:"#"}
+            About
+        %li.menu-item
+          %a{href:"#"}
+            Portfolio
+        %li.menu-item
+          %a{href:"#"}
+            Commercial
+        %li.menu-item
+          %a{href:"#"}
+            Residential
+        %li.menu-item
+          %a{href:"#"}
+            FAQs
+        %li.menu-item
+          %a{href:"#"}
+            Shop
+        %li.menu-item
+          %a{href:"#"}
+            Testimonials
+        %li.menu-item
+          %a{href:"#"}
+            Better Butcher Block
+        %li.menu-item
+          %a{href:"#"}
+            Contact
+            

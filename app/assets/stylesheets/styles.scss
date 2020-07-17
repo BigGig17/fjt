@@ -13,8 +13,8 @@ body{
 }
 .top-header {
     height: 48px;
-    background-size:cover;
-    background-position: 50% 50%;
+    background-size:cover !important;
+    background-position: 50% 50% !important;
 }
 .mid-header {
     height: 186px;
@@ -68,10 +68,6 @@ body{
     li{
         display: inline;
     }
-    .light-header-btn {
-        margin: 2px;
-        border: 2px solid black !important;
-    }
     a {
         font-weight: bold;
         background-color: #EDBF89;
@@ -86,6 +82,103 @@ body{
 }
 
 .titles {
+    margin-top: 10px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     color: black;
     text-align: center;
+}
+
+.light-header-btn {
+    height: 36px;
+    margin: 4px;
+    border: 2px solid black !important;
+}
+
+.header-payments {
+    
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline;
+    }
+    a {
+        font-weight: bold;
+        background-color: #a88761;
+        color: black;
+    }
+    a:hover {
+        background-color: black;
+        span{
+            color: white;
+        }
+    }
+}
+.menu{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #edbf7b;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    ul{
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #edbf7b;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: inherit;
+        padding-left: 0;
+        list-style: none;
+        margin: 0;
+        display: inline-block;
+        float: none;
+        margin-bottom: 0;
+    }
+    a{
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        font-family: inherit;
+        list-style: none;
+        box-sizing: border-box;
+        background-color: transparent;
+        position: relative;
+        display: block;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 13px 15px;
+        margin: 0 0 -5px;
+        color: #EDBF89;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    }
+    a:hover{
+        color: black;
+        background-color: #EDBF89;
+        text-decoration: none;
+    }
+}
+.menu-item{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #edbf7b;
+    font-family: inherit;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    float: left;
+    display: block !important;
+    min-height: 10px;
 }
