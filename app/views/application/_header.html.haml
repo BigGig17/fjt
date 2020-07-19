@@ -1,18 +1,16 @@
-.header.row.top-header{style: "background:url('#{asset_path('hard-wood-bg.jpg')}') no-repeat center center;"}
-  .col-lg-12.hardwood-header{style:"height: 100%;"}
-    .row
-      .col-lg-1
-      .col-lg-6
-        .social
+%section.tophead-wrapper{style: "background-image:url('#{asset_path('hard-wood-bg.jpg')}');"}
+  .shader-layer
+    .container-fluid
+      .row#topheader
+        .social.col-lg-5.col-md-5.col-sm-5.col-xs-12
           %ul.social-block
             %li.sm-button#facebook{"data-toggle":"tooltip", "data-placement":"bottom", "title":"Facebook"}
               %a{href:"https://www.facebook.com/foreverjointtops/"}
-                %i.fab.fa-facebook
+                %i.fab.fa-facebook{style:"margin-top:3px;"}
             %li.sm-button#twitter{"data-toggle":"tooltip", "data-placement":"bottom", "title":"Twitter"}
               %a{href:"https://twitter.com/FJTButcherBlock"}
-                %i.fab.fa-twitter
-      .col-lg-5
-        .contact-info
+                %i.fab.fa-twitter{style:"margin-top:3px;"}
+        .contact-info.col-lg-7.col-md-7.col-sm-7
           %ul
             %li
               %a.btn.btn-primary.light-header-btn{href: "mailto:info@foreverjointtops.com"}
@@ -24,6 +22,14 @@
                 %span
                   (608) 566-6903
                   %span.fas.fa-phone
+            %li
+              %a.btn.btn-primary.light-header-btn{href: "/login"}
+                %span
+                  Login
+            %li
+              %a.btn.btn-primary.light-header-btn{href: "/signup"}
+                %span
+                  Signup
 .mid-header{style: "background:url('#{asset_path('butcher-block-bg-2.jpg')}');"}
   .col-lg-12.mid-header-wood
     .row
@@ -49,38 +55,41 @@
                   Pay Invoice
                 %span.fab.fa-cc-paypal{style:"font-size: 25px;"}
       .col-lg-2
-.header.row.top-header{style: "background:url('#{asset_path('hard-wood-bg.jpg')}') no-repeat center center;"}
-  .col-lg-12.hardwood-header
-    .header-menu{style: "height: 100%;"}
-      %ul.menu
-        %li.menu-item
-          %a{href:"/home"}
-            Home
-        %li.menu-item
-          %a{href:"#"}
-            About
-        %li.menu-item
-          %a{href:"#"}
-            Portfolio
-        %li.menu-item
-          %a{href:"#"}
-            Commercial
-        %li.menu-item
-          %a{href:"#"}
-            Residential
-        %li.menu-item
-          %a{href:"#"}
-            FAQs
-        %li.menu-item
-          %a{href:"#"}
-            Shop
-        %li.menu-item
-          %a{href:"#"}
-            Testimonials
-        %li.menu-item
-          %a{href:"#"}
-            Better Butcher Block
-        %li.menu-item
-          %a{href:"#"}
-            Contact
-            
+%section.tophead-wrapper{style: "background-image:url('#{asset_path('hard-wood-bg.jpg')}');"}
+  .shader-layer
+    .container-fluid
+      .row#topheader
+        .social.col-lg-12.col-md-12.col-sm-12.col-xs-12
+          .header-menu{style: "height: 100%;"}
+            %ul.menu
+              %li.menu-item
+                %a{href:"/home"}
+                  Home
+              %li.menu-item
+                %a{href:"#"}
+                  About
+              %li.menu-item
+                %a{href:"#"}
+                  Portfolio
+              %li.menu-item
+                %a{href:"#"}
+                  Commercial
+              %li.menu-item
+                %a{href:"#"}
+                  Residential
+              %li.menu-item
+                %a{href:"#"}
+                  FAQs
+              %li.menu-item
+                %a{href:"#"}
+                  Shop
+              %li.menu-item
+                %a{href:"#"}
+                  Testimonials
+              %li.menu-item
+                %a{href:"#"}
+                  Better Butcher Block
+              %li.menu-item
+                %a{href:"#"}
+                  Contact
+                  
